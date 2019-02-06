@@ -1,32 +1,19 @@
 {
-  "name": "burger",
+  "name": "burgers",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A SQL and Express App",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kingjeremy2211/burger.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Ben Harloe",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kingjeremy2211/burger/issues"
-  },
-  "homepage": "https://github.com/kingjeremy2211/burger#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
-    "method-override": "^3.0.0",
-    "mysql": "^2.16.0",
-    "serve-favicon": "^2.5.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.18.4"
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0"
   }
 }

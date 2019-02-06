@@ -1,20 +1,3 @@
-INSERT INTO burgers (
-burger_name,
-devoured
-) VALUES
-(
-"The Jucy Lucy",
-0
-),
-(
-"The Ramen Burger",
-0
-),
-(
-"The Umami Burger",
-0
-),
-(
-"The Krabby Patty",
-0
-);
+INSERT burgers (burger_name) VALUES ('Bacon Cheeseburger');
+INSERT burgers (burger_name) VALUES ('Cheeseburger');
+INSERT burgers (burger_name) VALUES ('Vegetarian Burger');

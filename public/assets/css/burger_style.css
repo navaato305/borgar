@@ -1,102 +1,145 @@
+body {
+  background-image: url("../img/doodles.png");
+  font-family: Arial, sans-serif;
+}
 li {
-    padding: 15px;
-    margin: 15px;
-    background: #ffffff;
-    list-style: none;
-    background: #eceff1;
-    border: 1px black solid;
-    text-align: center;
-  }
-  
-  ul {
-      list-style: none;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .center {
-      text-align: center;
-  }
-  
-  .right {
-      align-content: right;
-  }
-  
-  img {
-      align-content: center;
-  }
-  
-  h1 {
-      text-align: center;
-      text-shadow: 2px 2px #ffffff;
-      font-family: 'Righteous', cursive;
-      font-size: 3em;
-  }
-  
-  h2 {
-      text-align: center;
-      text-shadow: 2px 2px #ffffff;
-      font-family: 'Righteous', cursive;
-      font-size: 2em;
-  }
-  
-  .create-update-form {
-    padding: 25px;
-    margin: 25px;
-    background: #eceff1;
-    border: 1px black solid;
-  }
-  
-  .form-group {
-    margin-bottom: 25px;
-  }
-  
-  .btn-primary {
-      border-radius: 15px;
-  }
-  
-  html, body{
-      height: 100%;
-  }
-  body { 
-      background-image: url("https://s3.us-east-2.amazonaws.com/school-umn-coding-bootcamp/burger/bw-burger.png");
-      background-position: center center;
-      background-color: #000000;  
-  }
-  
-  div, body{
-      margin: 0;
-      padding: 0;
-      font-family: exo, sans-serif;
-      color: red;
-  }
-  
-  .footer {
-      text-align: center;
-      text-shadow: 1px 1px #ffffff;
-      background: #eceff1;
-  }
-  .wrapper {
-      height: 100%; 
-      width: 100%; 
-      }
-  
-  .message {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%; 
-    height:45%;
-    bottom: 0; 
-    display: block;
-    position: absolute;
-    background-color: rgba(0,0,0,0.6);
-    color: #fff;
-    padding: 0.5em;
-  }
+  padding: 5px;
+  margin: 5px;
+}
+h1 {
+  color: rgb(177, 18, 18);
+  font-size: 300%;
+}
+#content{
+  background: #f0d8a8a4;
+  width: 600px;
+  margin: auto;
+  border-radius: 25px;
+}
+.label {
+  font-weight: bold;
+}
+.create-form {
+  padding: 5px;
+  margin: 5px;
+}
+.form-group {
+  margin-bottom: 5px;
+} 
 
-  div.center.col-sm-2 {
-      padding-top: 150px;
-  }
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*CHEESEBURGER*/
+.burger{
+	margin: 0 auto;
+	width: 250px;
+  position: relative;
+  height: 190px;
+}
+.burger .cheesey{
+	position: absolute;
+	top: 40px;
+	left: 30px;
+	-webkit-transform: scale(0.7, 0.3);
+	-moz-transform: scale(0.7, 0.3);
+	-o-transform: scale(0.7, 0.3);
+	-ms-transform: scale(0.7, 0.3);
+	transform: scale(0.7, 0.3);
+}
+.burger .cheesey .cheese{
+	-webkit-transform-origin: 100px 100px;
+	-moz-transform-origin: 100px 100px;
+	-o-transform-origin: 100px 100px;
+	transform-origin: 100px 100px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.burger .cheesey .cheese:before, .burger .cheesey .cheese:after{
+	content: '';
+	height: 200px;
+	width: 200px;
+	background: #ff0;
+	-webkit-box-shadow: -1px 1px #e5e600, -2px 2px #e5e600, -3px 3px #e5e600, -4px 4px #e5e600, 1px -1px #e5e600;
+	box-shadow: -1px 1px #e5e600, -2px 2px #e5e600, -3px 3px #e5e600, -4px 4px #e5e600, 1px -1px #e5e600;
+}
+
+.burger .cheesey .cheese:before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(25deg);
+	-moz-transform: rotate(25deg);
+	-o-transform: rotate(25deg);
+	-ms-transform: rotate(25deg);
+	transform: rotate(25deg);
+}
+.burger .cheesey .cheese:after{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	-webkit-transform: rotate(-15deg);
+	-moz-transform: rotate(-15deg);
+	-o-transform: rotate(-15deg);
+	-ms-transform: rotate(-15deg);
+	transform: rotate(-15deg);
+}
+.burger .patty{
+	background: #732626;
+	height: 75px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 70px;
+	border-radius: 125px 125px 125px 125px/25px 25px 25px 25px;
+}
+.burger .patty:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	border-radius: 125px/25px;
+	background: #933;
+}
+.burger .bun{
+	background: #dd8c3c;
+	width: 250px;
+}
+.burger .bun.top{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 100px;
+	border-radius: 125px 125px 125px 125px/75px 75px 25px 25px;
+}
+.burger .bun.bottom{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 100px;
+	height: 75px;
+	border-radius: 125px 125px 125px 125px/25px 25px 35px 35px;
+}
+.burger .bun.bottom:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	background: #f0d8a8;
+	border-radius: 125px/25px;
+}
